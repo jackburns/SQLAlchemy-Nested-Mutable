@@ -204,11 +204,11 @@ if pydantic is not None:
 
         def __init__(self, **data):
             super().__init__(**data)
-            for field in self.__fields__.values():
+            for field_name in self.model_fields.keys():
                 setattr(
                     self,
-                    field.name,
-                    TrackedObject.make_nested_trackable(getattr(self, field.name), self)
+                    field_name,
+                    TrackedObject.make_nested_trackable(getattr(self, field_name), self)
                 )
 
         def __setattr__(self, name, value):
