@@ -58,9 +58,9 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
-sqlalchemy = "~1.4.49"
+sqlalchemy = "^1.4"
 psycopg2-binary = "^2.8"
-pydantic = "~1.10.0"
+pydantic = "^2.2"
 typing-extensions = "^4.5.0"
 
 [build-system]
