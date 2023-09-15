@@ -1,10 +1,9 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Optional, Union, Any, Tuple, Dict, List, Iterable, overload
+from typing import TYPE_CHECKING, Optional, Union, Any, Tuple, Dict, List, Iterable, overload, TypeGuard, SupportsIndex
 from typing_extensions import Self
 from weakref import WeakValueDictionary
 
-from sqlalchemy.util.typing import SupportsIndex, TypeGuard
 from sqlalchemy.ext.mutable import Mutable
 
 from ._typing import _T, _KT, _VT

@@ -57,7 +57,7 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.10"
 sqlalchemy = "^1.4"
 psycopg2-binary = "^2.8"
 pydantic = "^2.2"
